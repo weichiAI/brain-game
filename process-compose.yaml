@@ -1,0 +1,10 @@
+version: "0.5"
+
+processes:
+  web:
+    command: "pnpm dev"
+    working_dir: "."
+    availability:
+      restart: "always"
+      backoff_seconds: 5
+      max_restarts: 20
