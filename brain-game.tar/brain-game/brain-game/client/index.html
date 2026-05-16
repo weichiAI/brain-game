@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN" data-theme-style="nomad">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>Agentma App · Powered by agentma.cn</title>
+    <script src="/imagicma-preview-feedback.js"></script>
+  </head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <script type="module">
+      import("/src/main.tsx").catch((error) => {
+        window.__IMAGICMA_PREVIEW_FEEDBACK__?.reportModuleBootstrapError(error);
+      });
+    </script>
+  </body>
+</html>
